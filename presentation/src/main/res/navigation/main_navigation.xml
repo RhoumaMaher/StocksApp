@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/marketFragment">
+
+
+    <fragment
+        android:id="@+id/marketFragment"
+        android:name="com.rhouma.presentation.market.MarketFragment"
+        android:label="Market"
+        tools:layout="@layout/fragment_market" >
+        <action
+            android:id="@+id/action_marketFragment_to_stockFragment"
+            app:destination="@id/stockFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/stockFragment"
+        android:name="com.rhouma.presentation.stock.StockFragment"
+        android:label="Stock"
+        tools:layout="@layout/fragment_stock" >
+        <argument
+            android:name="symbol"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+</navigation>

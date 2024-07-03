@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">MoneyBaseStocksApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="symbol">Symbol:</string>
+    <string name="market_price">Market Price:</string>
+    <string name="market_change">Market Change:</string>
+    <string name="change_percent">Change Percent:</string>
+    <string name="market_volume">Market Volume:</string>
+    <string name="back">Back</string>
+    <string name="fetching_data">Fetching data...</string>
+    <string name="market_icon">market icon</string>
+    <string name="back_button">back button</string>
 </resources>
