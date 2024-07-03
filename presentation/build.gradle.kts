@@ -37,6 +37,9 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.14"
     }
+    lintOptions {
+        disable.add("Instantiatable")
+    }
 
 }
 
