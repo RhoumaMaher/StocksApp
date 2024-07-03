@@ -48,10 +48,7 @@ dependencies {
     testImplementation(libs.couroutines.test)
     testImplementation(libs.mockito.core)
     testImplementation(libs.jupiter.api)
-    testImplementation((libs.mockk))
     testRuntimeOnly(libs.jupiter.engine)
-    testImplementation(libs.okhttp3.mockwebserver)
-    androidTestImplementation(libs.mockk)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
@@ -64,9 +61,6 @@ dependencies {
     // Retrofit
     implementation(libs.squareup.retrofit)
     implementation(libs.squareup.converter.gson)
-    implementation(libs.squareup.moshi)
-    implementation(libs.squareup.moshi.kotlin)
-    implementation(libs.squareup.converter.moshi)
 
     //Logging Interceptor
     implementation(libs.squareup.logging.interceptor)

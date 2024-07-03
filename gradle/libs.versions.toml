@@ -1,7 +1,11 @@
 [versions]
 
+
 minSdk = "26"
 compileSdk = "34"
+targetSdk = "34"
+versionCode = "1"
+versionName = "1.0"
 
 agp = "8.5.0"
 ksp = "1.9.24-1.0.20"
@@ -18,7 +22,6 @@ composeBom = "2024.06.00"
 appcompat = "1.7.0"
 material = "1.12.0"
 retrofit = "2.9.0"
-moshi = "1.13.0"
 logginginterceptor = "4.9.3"
 hilt = "2.49"
 hilt-compose = "1.2.0"
@@ -34,15 +37,8 @@ composeRuntime = "1.6.8"
 coroutineTest = "1.6.0"
 mockito = "3.11.2"
 jupiter = "5.7.0"
-mockWebServer = "4.9.3"
-mockk = "1.12.0"
 kotlinTestJunit = "1.6.0"
 coreTesting = "2.1.0"
-fragmentTesting = "1.4.0"
-coreTestKtx = "1.4.0"
-lifecycleRuntimeTesting = "2.4.0"
-robolectric = "4.9"
-turbine = "0.6.0"
 
 
 [libraries]
@@ -65,10 +61,7 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 squareup-retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
-squareup-moshi = { group = "com.squareup.moshi", name = "moshi", version.ref = "moshi" }
-squareup-moshi-kotlin = { group = "com.squareup.moshi", name = "moshi-kotlin", version.ref = "moshi" }
 squareup-converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
-squareup-converter-moshi = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "retrofit" }
 squareup-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "logginginterceptor" }
 dagger-hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 dagger-hilt-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hilt-compose" }
@@ -86,19 +79,11 @@ compose-runtime = { group = "androidx.compose.runtime", name = "runtime", versio
 couroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutineTest" }
 mockito-core = { group = "org.mockito", name = "mockito-core", version.ref = "mockito" }
 mockito-inline = { group = "org.mockito", name = "mockito-inline", version.ref = "mockito" }
-mockito-android = { group = "org.mockito", name = "mockito-android", version.ref = "mockito" }
 jupiter-api = { group = "org.junit.jupiter", name = "junit-jupiter-api", version.ref = "jupiter" }
 jupiter-engine = { group = "org.junit.jupiter", name = "junit-jupiter-engine", version.ref = "jupiter" }
-okhttp3-mockwebserver = { group = "com.squareup.okhttp3", name = "mockwebserver", version.ref = "mockWebServer" }
-mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
 kotlin-test-junit = { group = "org.jetbrains.kotlin", name = "kotlin-test-junit", version.ref = "kotlinTestJunit" }
-core-ktx-testing = { group = "androidx.test", name = "core-ktx", version.ref = "coreTestKtx" }
 core-testing = { group = "androidx.arch.core", name = "core-testing", version.ref = "coreTesting" }
-fragment-testing = { group = "androidx.fragment", name = "fragment-testing", version.ref = "fragmentTesting" }
-lifecycle-runtime-testing = { group = "androidx.lifecycle", name = "lifecycle-runtime-testing", version.ref = "lifecycleRuntimeTesting" }
 hilt-android-testing = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "hilt" }
-robolectric = { group = "org.robolectric", name = "robolectric", version.ref = "robolectric" }
-turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbine" }
 
 
 [plugins]

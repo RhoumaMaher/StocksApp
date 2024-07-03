@@ -37,7 +37,6 @@ dependencies {
     testImplementation(libs.junit)
     testImplementation(libs.couroutines.test)
     testImplementation(libs.mockito.core)
-    testImplementation(libs.mockk)
     testImplementation(libs.jupiter.api)
     testRuntimeOnly(libs.jupiter.engine)
     androidTestImplementation(libs.androidx.junit)

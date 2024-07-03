@@ -38,13 +38,11 @@ android {
         kotlinCompilerExtensionVersion = "1.5.14"
     }
 
-
 }
 
 dependencies {
 
     implementation(project(":domain"))
-    //implementation(project(":data"))
 
     implementation(libs.androidx.core.ktx)
 
@@ -59,27 +57,13 @@ dependencies {
     implementation(libs.androidx.material3)
     testImplementation(libs.junit)
     testImplementation(libs.couroutines.test)
-    testImplementation(libs.turbine)
-    testImplementation(libs.mockk)
     testImplementation(libs.mockito.core)
     testImplementation(libs.mockito.inline)
     testImplementation(libs.kotlin.test.junit)
     testImplementation(libs.core.testing)
     testImplementation(libs.jupiter.api)
-    testImplementation(libs.robolectric)
     testRuntimeOnly(libs.jupiter.engine)
 
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
-    androidTestImplementation(platform(libs.androidx.compose.bom))
-    androidTestImplementation(libs.androidx.ui.test.junit4)
-    androidTestImplementation(libs.fragment.testing)
-    androidTestImplementation(libs.mockito.core)
-    androidTestImplementation(libs.mockito.android)
-    androidTestImplementation(libs.mockk)
-    androidTestImplementation(libs.core.testing)
-    androidTestImplementation(libs.core.ktx.testing)
-    androidTestImplementation(libs.lifecycle.runtime.testing)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 

@@ -12,9 +12,9 @@ android {
     defaultConfig {
         applicationId = "com.rhouma.stocksapp"
         minSdk = libs.versions.minSdk.get().toInt()
-        targetSdk = libs.versions.compileSdk.get().toInt()
-        versionCode = 1
-        versionName = "1.0"
+        targetSdk = libs.versions.targetSdk.get().toInt()
+        versionCode = libs.versions.versionCode.get().toInt()
+        versionName = libs.versions.versionName.get()
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -35,12 +35,6 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
-    /*buildFeatures {
-        compose = true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.14"
-    }*/
 
     packaging {
         resources {
@@ -57,9 +51,5 @@ dependencies {
     // Dagger Hilt
     implementation(libs.dagger.hilt.android)
     ksp(libs.dagger.hilt.android.compiler)
-
-    //Compose runtime
-    //implementation(libs.compose.runtime)
-
 
 }
