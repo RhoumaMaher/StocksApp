@@ -7,7 +7,7 @@ targetSdk = "34"
 versionCode = "1"
 versionName = "1.0"
 
-agp = "8.5.0"
+agp = "8.5.1"
 ksp = "1.9.24-1.0.20"
 hiltandroid = "2.47"
 kotlin = "1.9.24"
@@ -15,7 +15,7 @@ coreKtx = "1.13.1"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
-lifecycleRuntimeKtx = "2.8.2"
+lifecycleRuntimeKtx = "2.8.3"
 activityCompose = "1.9.0"
 composeCompiler = "1.5.14"
 composeBom = "2024.06.00"
@@ -34,11 +34,11 @@ navigation = "2.7.7"
 composeRuntime = "1.6.8"
 
 
-coroutineTest = "1.6.0"
+coroutineTest = "1.7.3"
 mockito = "3.11.2"
 jupiter = "5.7.0"
-kotlinTestJunit = "1.6.0"
-coreTesting = "2.1.0"
+kotlinTestJunit = "1.8.22"
+coreTesting = "2.2.0"
 
 
 [libraries]
