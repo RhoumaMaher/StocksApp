@@ -20,12 +20,12 @@ android {
         release {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-            buildConfigField("String", "BASE_URL", "\"https://yh-finance.p.rapidapi.com/\"")
-            buildConfigField("String", "API_KEY", "\"333a025040msh5c77a90e069ae8ap1840a0jsn7236cbec5389\"")
+            buildConfigField("String", "BASE_URL", "\"https://apidojo-yahoo-finance-v1.p.rapidapi.com/\"")
+            buildConfigField("String", "API_KEY", "\"20f9a06a66msh39db6e9f2f5b115p10e18djsncdc0d357ccfc\"")
         }
         debug {
-            buildConfigField("String", "BASE_URL", "\"https://yh-finance.p.rapidapi.com/\"")
-            buildConfigField("String", "API_KEY", "\"333a025040msh5c77a90e069ae8ap1840a0jsn7236cbec5389\"")
+            buildConfigField("String", "BASE_URL", "\"https://apidojo-yahoo-finance-v1.p.rapidapi.com/\"")
+            buildConfigField("String", "API_KEY", "\"20f9a06a66msh39db6e9f2f5b115p10e18djsncdc0d357ccfc\"")
         }
     }
     compileOptions {
